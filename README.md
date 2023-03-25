@@ -117,10 +117,10 @@
 
 ## Event
 
-- Event 可以讓使用者輕鬆與 EVM 的 logging 系統運作，可以使用 dapp 監聽合約的事件，取得最新的狀態，
+- Event 可以讓使用者輕鬆與 EVM 的 logging 系統運作，並可於 function 中使用 emit 去觸發該事件，當觸發時，實際上會儲存在 Transation Log 之中，其 logging 系統是 EVM 中的特殊儲存系統，除此之外，Event 可以將其資訊產出並讓 Dapp 監聽合約的事件，取得最新的狀態。
 
 
 ## Indexed
 
-- 在 event 中，可以將 event 的參數設定為 indexed，提供 client 端可以執行 filter，但一個 event 中最多只能設定 3 個 indexed，藉此方便查找。
+- 在 event 中，可以將 event 的參數設定為 indexed，提供 client 端可以執行 filter，但一個 event 中最多只能設定 3 個 indexed，藉此方便查找。而 Indexed 也可以稱作 Topic，若是沒有標記為 Indexed 的欄位，則會被寫入於 log 之中。
 
