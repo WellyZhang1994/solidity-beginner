@@ -111,6 +111,42 @@
     3.`struct` 預設值為 tuple 包含所有內容物的預設值
     4.`bytes` 預設值為 empty or nobyte
 
+## Advanced Array Operations
+
+The `advancedArray.sol` file demonstrates advanced array operations in Solidity:
+
+- Different types of arrays (dynamic, fixed-size, string, address)
+- Nested arrays (arrays of arrays)
+- Array initialization in constructor
+- Memory vs Storage arrays
+- Array slicing and concatenation
+- Finding elements in arrays
+- Removing elements (preserving and not preserving order)
+- Sorting arrays
+- Working with nested arrays
+- Using arrays as function parameters
+- Returning multiple arrays
+- Array utilities (sum, max, min)
+
+Key concepts covered:
+
+1. **Memory vs Storage Arrays**:
+   - Storage arrays persist between function calls and can be resized
+   - Memory arrays are temporary and have fixed size
+
+2. **Array Manipulation**:
+   - Efficient ways to add, remove, and find elements
+   - Different approaches for removing elements with trade-offs
+
+3. **Gas Optimization**:
+   - Understanding which operations are gas-efficient
+   - Avoiding expensive operations like returning large arrays
+
+4. **Data Locations**:
+   - Using `calldata` for read-only array parameters
+   - Using `memory` for temporary arrays
+   - Using `storage` for persistent arrays
+
 ## Constructor
 
 - Solidity 的 Constructor 可以讓智能合約部署前給定一初始參數（如合約創始者的地址）而當有多個合約繼承且每個合約都需要 Constructor 時，我們可以在入口合約採直接指定（directly specify）或是採修飾詞（modifier）的方式給予初始值。
