@@ -34,3 +34,13 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  Q:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Run q cli
+        run: q chat --no-interactive --trust-all-tools "how are you"
+      
+   
