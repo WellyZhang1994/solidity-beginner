@@ -41,6 +41,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run q cli
-        run: q chat --no-interactive --trust-all-tools "幫我查詢 aws billing conductor 要如何判斷 primary account 是否有效套用 rules?"
+        run: echo "幫我查詢 aws billing conductor 要如何判斷 primary account 是否有效套用 rules?, 幫我查詢 aws billing conductor 要如何判斷 primary account 是否有效套用 rules?, 幫我查詢 aws billing conductor 要如何判斷 primary account 是否有效套用 rules?, 幫我查詢 aws billing conductor 要如何判斷 primary account 是否有效套用 rules?" | q chat --no-interactive --trust-all-tools 
       
    
